@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="viewport">
     <router-view/>
   </div>
 </template>
@@ -8,11 +8,12 @@
 import viewportService from '@/services/viewportService'
 
 export default {
-  name: 'App',
   data: () => ({viewportService}),
 
+  computed: { viewport: () => viewportService.viewport },
+
   created() {
-    document.body.classList.add(this.viewportService.viewport)
+    this.$store.commit('refreshReactivity')
   },
 }
 </script>
