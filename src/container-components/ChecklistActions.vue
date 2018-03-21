@@ -3,13 +3,13 @@
 		<button-clear
 		 @click     = "deleteCheckedItems"
 		 class      = "tooltipped tooltipped-s border p-2 mb-2 mr-2 float-left"
-		 aria-label = "Clears checked items"
+		 aria-label = "Počisti končana opravila"
 		/>
 		<button-share
 		 v-clipboard:copy    = "checklistUrl"
 		 v-clipboard:success = "() => { copied = true }"
 		 class               = "tooltipped tooltipped-s border p-2 mb-2 mr-2 float-left"
-		 :aria-label          = "copied ? 'Copied!' : 'Copies unchecked items to clipboard as URL'"
+		 :aria-label          = "copied ? 'Kopirano!' : 'Kopiraj nedokončana opravila kot URL'"
 		/>
 	</div>
 </template>
