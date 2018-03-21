@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import 'vue-awesome/icons/trash'
 
 export default {
 	data: () => ({ message: null, backupMessage: null, events: null, readonly: false}),
