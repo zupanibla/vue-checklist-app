@@ -1,6 +1,13 @@
 # checklist-app
 
-> A Vue.js project
+> A simple checklist app built with Vue.js framework.
+
+[Demo](http://checklist.medianova.si)
+
+## Features
+- Adding, removing, editing and checking list items.
+- List is saved in local storage.
+- List sharing via URL.
 
 ## Build Setup
 
@@ -26,5 +33,4 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+[docs for vue-loader](http://vuejs.github.io/vue-loader).
